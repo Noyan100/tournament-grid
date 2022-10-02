@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.players{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.player{
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 5px 12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.random{
+  margin-bottom: 25px;
+  color: tomato;
+  border: 1px solid tomato;
+  cursor: pointer;
+  padding: 5px 12px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(160px, 160px));
+}
+.startgrid{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 25px;
+}
+.nextgrid{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.lastgrid{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.element {
+  width: 150px;
+  height: 25px;
+  border: 1px solid #000;
+  position: relative;
+}
+button{
+  cursor: pointer;
 }
